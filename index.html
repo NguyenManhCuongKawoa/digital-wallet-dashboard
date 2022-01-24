@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Wallet Dashboard</title>
+
+    <link rel="stylesheet" href="./assets/normalize.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/responsive.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Begin: header area -->
+        <header class="header"> 
+            <div class="logo">
+                <h2>next wallet</h2>
+                <p>by Baby Boy</p>
+            </div>
+            <!-- Begin: search area -->
+            <div class="search">
+                <div class="search-input">
+                    <input type="text" placeholder="Search for anything"/>
+                </div>
+                <div class="search-icon">
+                    <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 13C10.3137 13 13 10.3137 13 7C13 3.68629 10.3137 1 7 1C3.68629 1 1 3.68629 1 7C1 10.3137 3.68629 13 7 13Z" stroke="#828282" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16 17L11 12" stroke="#828282" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                    
+                </div>
+            </div>
+            <!-- End: search area -->
+            <!-- Begin: profile area -->
+            <div class="profile">
+                <div class="message-icon">
+                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 6.5H14M6 10H14M2 14.5H7.72288C7.89527 14.5 8.05551 14.5888 8.14688 14.735L10.0275 17.744C10.2344 18.0751 10.7241 18.0518 10.8987 17.7026L12.3618 14.7764C12.4465 14.607 12.6196 14.5 12.809 14.5H18.5C19.0523 14.5 19.5 14.0523 19.5 13.5V2C19.5 1.44772 19.0523 1 18.5 1H2C1.44772 1 1 1.44772 1 2V13.5C1 14.0523 1.44772 14.5 2 14.5Z" stroke="#828282" stroke-width="2" stroke-linecap="round"/>
+                    </svg> 
+                    <span class="message-icon--badge">
+                        2
+                    </span>                      
+                </div>
+                <div class="profile-main">
+                    <div class="profile-img">
+                        <img src="./assets/img/avatar.png" alt="avatar profile">
+                    </div>
+                    <div class="profile-info">
+                        <h3>Baby Boy</h3>
+                        <span>admin</span>
+                    </div>
+                </div>
+            </div>
+            <!-- End: profile area -->
+        </header>
+        <!-- End: header area -->
+        <!-- begin: main area -->
+        <main class="main">
+            <!-- Begin: navbar area -->
+            <nav class="navbar">
+                <div class="navbar-item active">
+                    <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.3913 2C18.9436 2 19.3913 1.55228 19.3913 1C19.3913 0.447715 18.9436 0 18.3913 0V2ZM10.7826 11.9524H11.7826V10.9524H10.7826V11.9524ZM18.3913 0H3V2H18.3913V0ZM3 25H24V23H3V25ZM27 22V9.02381H25V22H27ZM0 3V7.02381H2V3H0ZM24 6.02381H1V8.02381H24V6.02381ZM0 7.02381V11.9524H2V7.02381H0ZM1 12.9524H10.7826V10.9524H1V12.9524ZM9.78261 11.9524V15.4286H11.7826V11.9524H9.78261ZM0 11.9524V17.4286H2V11.9524H0ZM0 17.4286V22H2V17.4286H0ZM8.78261 16.4286H1V18.4286H8.78261V16.4286ZM27 9.02381C27 7.36695 25.6569 6.02381 24 6.02381V8.02381C24.5523 8.02381 25 8.47152 25 9.02381H27ZM9.78261 15.4286C9.78261 15.9809 9.33489 16.4286 8.78261 16.4286V18.4286C10.4395 18.4286 11.7826 17.0854 11.7826 15.4286H9.78261ZM24 25C25.6569 25 27 23.6569 27 22H25C25 22.5523 24.5523 23 24 23V25ZM3 23C2.44772 23 2 22.5523 2 22H0C0 23.6569 1.34315 25 3 25V23ZM3 0C1.34315 0 0 1.34314 0 3H2C2 2.44772 2.44772 2 3 2V0Z" fill="white"/>
+                    </svg>
+                </div>
+                <div class="navbar-item ">
+                    <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d_6_191)">
+                        <path d="M28 13L23.9867 2.29775C23.6939 1.51715 22.9477 1 22.114 1H10C9.11111 1 8.32889 1.58667 8.08 2.44L5 13M28 13V21.5C28 22.6046 27.1046 23.5 26 23.5H7C5.89543 23.5 5 22.6046 5 21.5V13M28 13H20V16C20 17.1046 19.1046 18 18 18H14C12.8954 18 12 17.1046 12 16V13H5M11 6H20M12.5 10.5H19" stroke="#828282" stroke-width="2" shape-rendering="crispEdges"/>
+                        </g>
+                        <defs>
+                        <filter id="filter0_d_6_191" x="0" y="0" width="33" height="32.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="4"/>
+                            <feGaussianBlur stdDeviation="2"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_6_191"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_6_191" result="shape"/>
+                        </filter>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="navbar-item ">
+                    <svg width="27" height="20" viewBox="0 0 27 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 2C17.5523 2 18 1.55228 18 1C18 0.447715 17.5523 0 17 0V2ZM24.5 10C24.5 9.44771 24.0523 9 23.5 9C22.9477 9 22.5 9.44771 22.5 10H24.5ZM15.7071 4.29289C15.3166 3.90237 14.6834 3.90237 14.2929 4.29289C13.9024 4.68342 13.9024 5.31658 14.2929 5.70711L15.7071 4.29289ZM18.5 8.5L17.7929 9.20711L18.5 9.91421L19.2071 9.20711L18.5 8.5ZM26.7071 1.70711C27.0976 1.31658 27.0976 0.683417 26.7071 0.292893C26.3166 -0.0976311 25.6834 -0.0976311 25.2929 0.292893L26.7071 1.70711ZM9.53417 11.0124L9.19243 11.9522L9.53417 11.0124ZM9.46583 11.0124L9.80757 11.9522L9.46583 11.0124ZM14.4666 12.806L14.1248 13.7458L14.4666 12.806ZM4.53344 12.806L4.87519 13.7458L4.53344 12.806ZM17 0H3V2H17V0ZM0 3V17H2V3H0ZM3 20H21.5V18H3V20ZM24.5 17V10H22.5V17H24.5ZM14.2929 5.70711L17.7929 9.20711L19.2071 7.79289L15.7071 4.29289L14.2929 5.70711ZM19.2071 9.20711L26.7071 1.70711L25.2929 0.292893L17.7929 7.79289L19.2071 9.20711ZM4.56762 14H14.4324V12H4.56762V14ZM14.8083 11.8662L9.87592 10.0726L9.19243 11.9522L14.1248 13.7458L14.8083 11.8662ZM9.12408 10.0726L4.1917 11.8662L4.87519 13.7458L9.80757 11.9522L9.12408 10.0726ZM9.5 7.5H7.5C7.5 8.60457 8.39543 9.5 9.5 9.5V7.5ZM9.87592 10.0726C9.63308 9.98433 9.36691 9.98433 9.12408 10.0726L9.80757 11.9522C9.60889 12.0245 9.39111 12.0245 9.19243 11.9522L9.87592 10.0726ZM14.4324 14C15.6632 14 15.9651 12.2869 14.8083 11.8662L14.1248 13.7458C13.1784 13.4017 13.4253 12 14.4324 12V14ZM4.56762 12C5.57466 12 5.82165 13.4016 4.87519 13.7458L4.1917 11.8662C3.03492 12.2869 3.33678 14 4.56762 14V12ZM9.5 5.5C8.39543 5.5 7.5 6.39543 7.5 7.5H9.5V5.5ZM21.5 20C23.1569 20 24.5 18.6569 24.5 17H22.5C22.5 17.5523 22.0523 18 21.5 18V20ZM11.5 7.5C11.5 6.39543 10.6046 5.5 9.5 5.5V7.5H11.5ZM0 17C0 18.6569 1.34315 20 3 20V18C2.44772 18 2 17.5523 2 17H0ZM9.5 9.5C10.6046 9.5 11.5 8.60457 11.5 7.5H9.5V9.5ZM3 0C1.34315 0 0 1.34315 0 3H2C2 2.44772 2.44772 2 3 2V0Z" fill="#828282"/>
+                    </svg>
+                </div>
+                <!-- <div class="navbar-item ">
+                    <svg width="21" height="25" viewBox="0 0 21 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 4.5H18.5C19.0523 4.5 19.5 4.94772 19.5 5.5V23C19.5 23.5523 19.0523 24 18.5 24H2C1.44772 24 1 23.5523 1 23V5.5C1 4.94772 1.44772 4.5 2 4.5H5M15 4.5V3C15 1.89543 14.1046 1 13 1H7C5.89543 1 5 1.89543 5 3V4.5M15 4.5V4.5C15 5.60457 14.1046 6.5 13 6.5H7C5.89543 6.5 5 5.60457 5 4.5V4.5M5.5 12H15M15 17H5.5" stroke="#828282" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div> -->
+                <div class="navbar-item ">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C14.2091 22 16 20.2091 16 18C16 15.7909 14.2091 14 12 14C9.79086 14 8 15.7909 8 18C8 20.2091 9.79086 22 12 22ZM22 12C22 15.4784 20.224 18.5421 17.5293 20.3336C17.8324 19.6163 18 18.8277 18 18C18 15.4354 16.3909 13.2466 14.1273 12.388C15.2523 11.6802 16 10.4274 16 9C16 6.79086 14.2091 5 12 5C9.79086 5 8 6.79086 8 9C8 10.4274 8.74765 11.6802 9.87271 12.388C7.60905 13.2466 6 15.4354 6 18C6 18.8277 6.1676 19.6163 6.47071 20.3336C3.77601 18.5421 2 15.4784 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24ZM12 11C13.1046 11 14 10.1046 14 9C14 7.89543 13.1046 7 12 7C10.8954 7 10 7.89543 10 9C10 10.1046 10.8954 11 12 11Z" fill="#828282"/>
+                    </svg>
+                </div>
+                <div class="navbar-item ">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8986 14.5H22H19.8389C19.2577 17.1619 17.1619 19.2577 14.5 19.8389V23.8986C19.3751 23.2339 23.2339 19.3751 23.8986 14.5ZM12.5 23.9888V19.9824C9.37315 19.7617 6.81331 17.4874 6.16109 14.5H2.10142C2.81099 19.704 7.16019 23.75 12.5 23.9888ZM23.9888 12.5H22H19.9824C19.7617 9.37315 17.4874 6.81331 14.5 6.16109V2.10142C19.704 2.81099 23.75 7.16019 23.9888 12.5ZM12.5 2.01116C6.82267 2.26514 2.26514 6.82267 2.01116 12.5H6.01758C6.2623 9.03251 9.03251 6.2623 12.5 6.01758V2.01116ZM13 26C20.1797 26 26 20.1797 26 13C26 5.8203 20.1797 0 13 0C5.8203 0 0 5.8203 0 13C0 20.1797 5.8203 26 13 26ZM13 18C15.7614 18 18 15.7614 18 13C18 10.2386 15.7614 8 13 8C10.2386 8 8 10.2386 8 13C8 15.7614 10.2386 18 13 18Z" fill="#828282"/>
+                    </svg>
+                </div>
+            </nav>
+            <!-- End: navbar area -->
+            <!-- Begin: content area -->
+            <div class="content">
+                <div class="content-wrapper">
+                    <div class="content-left">
+                        <div class="content-left_headding">
+                            <h2 class="content-left_headding-title">My Dashboard</h2>
+                            <div class="content-left_headding-button">
+                                <span>This Week</span>
+                                <div class="content-left_headding-button-icon">
+                                    <svg width="13" height="9" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 1L6.34286 7L1 1" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>                                        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-left_main">
+                            <div class="content-left_main-item">
+                                <div class="card profile-card">
+                                    <div class="profile-card_img">
+                                        <div class="profile-card_img-img">
+                                            <img src="./assets/img/avatar1.png" alt="avatar" />
+                                        </div>
+                                        <div class="profile-card_img-star">
+                                            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 0.618033L9.43284 5.02786C9.56672 5.43989 9.95067 5.71885 10.3839 5.71885H15.0207L11.2694 8.44427C10.919 8.69891 10.7723 9.15028 10.9062 9.56231L12.339 13.9721L8.58779 11.2467C8.2373 10.9921 7.7627 10.9921 7.41222 11.2467L3.66099 13.9721L5.09383 9.56231C5.2277 9.15028 5.08105 8.69892 4.73056 8.44427L0.979334 5.71885H5.6161C6.04933 5.71885 6.43329 5.43989 6.56716 5.02786L8 0.618033Z" stroke="#828282"/>
+                                            </svg>                                            
+                                        </div>
+                                        <div class="profile-card_img-menu">
+                                            <div class="profile-card_img-menu-item profile-card_img-menu-true">
+                                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 4.5L4.53659 9L15 1" stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg>
+                                            </div>
+                                            <div class="profile-card_img-menu-item">
+                                                <svg width="18" height="9" viewBox="0 0 18 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 1H17M1 4.5H12.5M12.5 8H1" stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="profile-card_btn">
+                                        View Analysis
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-left_main-item">
+                                <div class="dispute-progress-details">
+                                    <div class="card_heading">
+                                        <div class="card_heading-line1">
+                                            <h4>Dispute Progress</h4>
+                                            <span>
+                                                <svg width="22" height="5" viewBox="0 0 22 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="5.2" height="5" rx="1" fill="#4F4F4F"/>
+                                                    <rect x="8.39999" width="5.2" height="5" rx="1" fill="#4F4F4F"/>
+                                                    <rect x="16.8" width="5.2" height="5" rx="1" fill="#4F4F4F"/>
+                                                </svg>                                                    
+                                            </span>
+                                        </div>
+                                        <div class="card_heading-line2">
+                                            <span>30 Dispute</span> in this month
+                                        </div>
+                                    </div>
+                                    <div class="dispute-progress-details_main">
+                                        <div class="dispute-progress-details_main-chart">
+
+                                        </div>
+                                        <div class="dispute-progress-details_main-btn">
+                                            <div class="dispute-progress-details_main-btn_item">
+                                                <div class="btn btn-danger">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C14.2091 22 16 20.2091 16 18C16 15.7909 14.2091 14 12 14C9.79086 14 8 15.7909 8 18C8 20.2091 9.79086 22 12 22ZM22 12C22 15.4784 20.224 18.5421 17.5293 20.3336C17.8324 19.6163 18 18.8277 18 18C18 15.4354 16.3909 13.2466 14.1273 12.388C15.2523 11.6802 16 10.4274 16 9C16 6.79086 14.2091 5 12 5C9.79086 5 8 6.79086 8 9C8 10.4274 8.74765 11.6802 9.87271 12.388C7.60905 13.2466 6 15.4354 6 18C6 18.8277 6.1676 19.6163 6.47071 20.3336C3.77601 18.5421 2 15.4784 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24ZM12 11C13.1046 11 14 10.1046 14 9C14 7.89543 13.1046 7 12 7C10.8954 7 10 7.89543 10 9C10 10.1046 10.8954 11 12 11Z" fill="#DAA27D"/>
+                                                    </svg>                                                        
+                                                </div>
+                                                <h4>Generated</h4>
+                                                <p>200 Accounts</p>
+                                            </div>
+                                            <div class="dispute-progress-details_main-btn_item">
+                                                <div class="btn btn-info">
+                                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 4.5H3.5M18.5 4.5H16M16 4.5V17.5C16 18.6046 15.1046 19.5 14 19.5H5.5C4.39543 19.5 3.5 18.6046 3.5 17.5V4.5M16 4.5H3.5M8 8V15M12 8V15M7 1H13" stroke="#6161A7" stroke-width="2" stroke-linecap="round"/>
+                                                    </svg>                                                        
+                                                </div>
+                                                <h4>Removed</h4>
+                                                <p>12 Accounts</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-left_main-item">
+                                <div class="credit-details">
+                                    <div class="credit-details_heading">
+                                        <div class="card_heading">
+                                            <div class="card_heading-line1">
+                                                <h4>Credit by Categories</h4>
+                                                <span>
+                                                    <svg width="22" height="5" viewBox="0 0 22 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="5.2" height="5" rx="1" fill="#4F4F4F"/>
+                                                        <rect x="8.39999" width="5.2" height="5" rx="1" fill="#4F4F4F"/>
+                                                        <rect x="16.8" width="5.2" height="5" rx="1" fill="#4F4F4F"/>
+                                                    </svg>                                                    
+                                                </span>
+                                            </div>
+                                            <div class="card_heading-line2">
+                                                achsc hasvbxchas ahsbasjx babyboy
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="credit-details_list">
+                                        <div class="credit-details_item done">
+                                            <div class="credit-details_item-left">
+                                                <img src="/assets/img/category1.png" alt="credit image">
+                                                <span class="credit-details_item-icon">
+                                                    <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 4.5L4.53659 9L15 1" stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round"/>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <div class="credit-details_item-right">
+                                                <div class="credit-details_item-work">
+                                                    <h4>Installment</h4> 
+                                                    <span>$ 240</span>
+                                                </div>
+                                                <div class="credit-details_item-owner">
+                                                    Samantha William
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="credit-details_item">
+                                            <div class="credit-details_item-left">
+                                                <img src="/assets/img/category2.png" alt="credit image">
+                                                <span class="credit-details_item-icon">
+                                                    <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 4.5L4.53659 9L15 1" stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round"/>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <div class="credit-details_item-right">
+                                                <div class="credit-details_item-work">
+                                                    <h4>Other Loans</h4> 
+                                                    <span>$ 20</span>
+                                                </div>
+                                                <div class="credit-details_item-owner">
+                                                    Janathan W.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-left_main-item">
+                                <div class="card credit-report-cart">
+                                    <div class="credit-report-cart_header">
+                                        Credit Reports
+                                    </div>
+                                    <div class="credit-report-cart_main">
+                                        <img src="./assets/img/img1.png" alt="Credit Reports">
+                                        <div class="left credit-report-cart_main-icon">
+                                            <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 1L2 6.65714L8 12" stroke="#DADADA" stroke-width="2" stroke-linecap="round"/>
+                                            </svg>                                                
+                                        </div>
+                                        <div class="right credit-report-cart_main-icon">
+                                            <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1L7 6.65714L1 12" stroke="#BDBDBD" stroke-width="2" stroke-linecap="round"/>
+                                            </svg>                                                
+                                        </div>
+                                    </div>
+                                    <div class="credit-report-cart_bottom">
+                                        You are entrepreneur
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-right">
+                        <div class="total-amount">
+                            <h3>$ 1,280.50</h3>
+                            <p>Thursday, 10 December 2021</p>
+                        </div>
+                        <div class="new-deals-cards">
+                            <div class="new-deals-cards_heading">
+                                Today's Deals 
+                            </div>
+                            <div class="new-deals-cards_list">
+                                <div class="new-deals-cards_item">
+                                    <div class="new-deals-cards_item-img">
+                                        <img src="./assets/img/c3.png" alt="">
+                                    </div>
+                                    <div class="new-deals-cards_item-info">
+                                        <h3>Hunter MacBook</h3>
+                                        <p>52164266224976524 46851</p>
+                                    </div>
+                                    <div class="new-deals-cards_item-new">
+                                        New
+                                    </div>
+                                    <div class="new-deals-cards_item-icon">
+                                        <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L7 6.65714L1 12" stroke="#BDBDBD" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="new-deals-cards_item">
+                                    <div class="new-deals-cards_item-img">
+                                        <img src="./assets/img/c2.png" alt="">
+                                    </div>
+                                    <div class="new-deals-cards_item-info">
+                                        <h3>Hexagon</h3>
+                                        <p>52164266224976524 46851</p>
+                                    </div>
+                                    <div class="new-deals-cards_item-new">
+                                        New
+                                    </div>
+                                    <div class="new-deals-cards_item-icon">
+                                        <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L7 6.65714L1 12" stroke="#BDBDBD" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="new-deals-cards_item">
+                                    <div class="new-deals-cards_item-img">
+                                        <img src="./assets/img/c1.png" alt="">
+                                    </div>
+                                    <div class="new-deals-cards_item-info">
+                                        <h3>Marco Ruiz</h3>
+                                        <p>52164266224976524 46851</p>
+                                    </div>
+                                    <div class="new-deals-cards_item-new">
+                                        New
+                                    </div>
+                                    <div class="new-deals-cards_item-icon">
+                                        <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L7 6.65714L1 12" stroke="#BDBDBD" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="new-deals-cards_btn">
+                                View more
+                            </div>
+                        </div>
+                        <div class="loan-calculator">
+                            <div class="card_heading">
+                                <div class="card_heading-line1">
+                                    <h4>Loan Calculator</h4>
+                                    <span>
+                                        <svg width="22" height="5" viewBox="0 0 22 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="5.2" height="5" rx="1" fill="#4F4F4F"/>
+                                            <rect x="8.39999" width="5.2" height="5" rx="1" fill="#4F4F4F"/>
+                                            <rect x="16.8" width="5.2" height="5" rx="1" fill="#4F4F4F"/>
+                                        </svg>                                                    
+                                    </span>
+                                </div>
+                                <div class="card_heading-line2">
+                                    Select the amount needed and the relmbursement
+                                </div>
+                            </div>
+                            <div class="loan">
+                                <h3>$ 450.50</h3>
+                                <p>All loan Amount</p>
+                            </div>
+                        </div>
+                        <div class="more-people">
+                            <div class="more-people_list">
+                                <div class="more-people_item">
+                                    <img src="./assets/img/Ellipse 2.png" alt="">
+                                </div>
+                                <div class="more-people_item">
+                                    <img src="./assets/img/Ellipse 3.png" alt="">
+                                </div>
+                                <div class="more-people_item">
+                                    <img src="./assets/img/Ellipse 4.png" alt="">
+                                </div>
+                                <div class="more-people_item">
+                                    <img src="./assets/img/Ellipse 5.png" alt="">
+                                </div>
+                                <div class="more-people_item more-people_end-list">
+                                    20+
+                                </div>
+                            </div>
+                            <div class="more-people_view-more">
+                                View More People
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="footer">
+    
+                </footer>
+            </div>
+            <!-- End: content area -->
+        </main>
+        <!-- End: main area -->
+    </div>
+</body>
+</html>

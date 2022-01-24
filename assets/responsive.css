@@ -1,0 +1,12 @@
+
+@media (max-width: 1448px) {
+    .wrapper {
+        padding: 40px 72px 0 72px;
+    }
+}
+
+@media (max-width: 1320px) {
+    .wrapper {
+        padding: 32px 60px 0 60px;
+    }
+}

@@ -1,0 +1,782 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    background-color: #F6F6F6;
+}
+
+.wrapper {
+    font-family: 'Mulish', sans-serif;
+    padding: 18px 135px 58px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Begin: Header Css */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 2.875rem;
+}
+
+/* Begin: Header Logo */
+.logo h2 {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.56875rem;
+    color: #332D76;
+    white-space: nowrap;
+}
+
+.logo p {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 0.625rem;
+    line-height: 0.8125rem;
+    color: #000000;
+    white-space: nowrap;
+    
+}
+/* End: Header Logo */
+
+/* Begin: Header Search */
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    min-width: 21.4375rem;
+    max-width: 27rem;
+    margin: 0 2rem;
+    background-color: #fff;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 23px;
+}
+
+.search-input {
+    height: 100%;
+    width: 100%;
+    border-radius: 23px;
+}
+
+.search-input input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 23px;
+    text-indent: 1.25rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #828282;
+    vertical-align: middle;
+}
+
+.search-input input::placeholder {
+    color: #828282;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.search-input input::-webkit-input-placeholder {
+    color: #828282;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+  
+.search-input input:-moz-placeholder {
+    color: #828282;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.search-icon {
+    position: absolute;
+    right: 1.25rem;
+    margin-top: 1px;
+}
+
+.search-icon svg {
+    width: 0.9375rem;
+    height: 1rem;
+}
+/* End: Header Search */
+
+/* Begin: Header Profile */
+.profile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 2rem;
+}
+
+.profile .message-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.875rem;
+    min-height: 2.875rem;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.1);
+    margin-right: 3rem;
+    cursor: pointer;
+}
+
+.profile .message-icon .message-icon--badge {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.5625rem;
+    line-height: 1rem;
+
+    color: #FFFFFF;
+    background-color: #6A63E5;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.profile-main {
+    display: flex;
+    align-items: center;
+}
+
+.profile-main .profile-img {
+    width: 2.875rem;
+    height: 2.875rem;
+    border-radius: 50%;
+    margin-right: 1.125rem;
+}
+
+.profile-main .profile-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.profile-main .profile-info h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #333333;
+    white-space: nowrap;
+
+}
+
+.profile-main .profile-info span {
+    color: #828282;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.625rem;
+    line-height: 0.8125rem;
+    white-space: nowrap;
+}
+
+/* End: Header Profile */
+/* Begin: Main */
+.main {
+    display: flex;
+    margin-top: 2.75rem;
+}
+
+/* Begin: Main Navbar */
+.main .navbar {
+    width: 4.125rem;
+    margin-right: 2rem;
+    padding-top: 2.125rem;
+}
+
+.main .navbar .navbar-item {
+    position: relative;
+    width: 4.125rem;
+    height: 4.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .navbar .navbar-item svg > path {
+    fill: #828282;
+}
+
+.main .navbar .navbar-item.active {
+    background-color: #6E60DF;
+    border-radius: 50%;
+    margin-bottom: 2.5rem;
+}
+
+.main .navbar .navbar-item.active svg > path {
+    fill: white;
+}
+
+.main .navbar .navbar-item.active::before {
+    position: absolute;
+    top: 1.375rem;
+    width: 3.375rem;
+    height: 3.375rem;
+    content: "";
+    background: rgba(110, 96, 223, 0.75);
+    filter: blur(37px);
+}
+
+/* End: Main Navbar */
+/* Begin: Main Content */
+.content {
+    flex: 1;
+}
+
+.content-wrapper {
+    display: flex;
+
+}
+
+.content-left {
+    width: 75%;
+    padding: 0 2.25rem;
+}
+
+.content-left_headding {
+    height: 3.125rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.content-left_headding-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 3.125rem;
+    color: #333333;
+    white-space: nowrap;
+}
+
+.content-left_headding-button {
+    background-color: #E5E5E5;
+    border-radius: 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.75rem;
+    color: #4F4F4F;
+    height: 2.875rem;
+}
+
+.content-left_headding-button span {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.875rem;
+    color: #4F4F4F;
+    margin-right: 0.75rem;
+    white-space: nowrap;
+}
+
+.content-right {
+    width: 35%;
+    padding-left: 2.25rem; 
+    height: fit-content;
+    border-left: 1px solid #ccc;
+}
+
+/* Begin: Total Amount */
+.total-amount {
+    margin-bottom: 2rem;
+}
+
+.total-amount h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.total-amount p {
+    font-size: 0.75rem;
+    font-weight: 300;
+    margin-top: 0.1rem;
+}
+/* Begin: new-deals-cards */
+.new-deals-cards {
+
+}
+
+.new-deals-cards_heading {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.new-deals-cards_list {
+    padding: 1.6rem 0;
+}
+
+.new-deals-cards_item {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    margin-bottom: 1rem;  
+}
+
+.new-deals-cards_item-img {
+    width: 50px;
+    height: 100%;
+    margin-right: 1rem;
+}
+
+.new-deals-cards_item-img img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.new-deals-cards_item-info {
+}
+
+.new-deals-cards_item-info h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.new-deals-cards_item-info p {
+    color: #828282;
+    font-size: 0.75rem;
+    font-weight: 300;
+}
+
+.new-deals-cards_item-new {
+    background: #4E97CC;
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3rem;
+    color: #fff;
+    align-self: flex-start;
+    margin-left: 0.5rem;
+}
+
+.new-deals-cards_item-icon {
+    margin-left: 1rem;
+}
+
+.new-deals-cards_item-icon path {
+    stroke: #4F4F4F;
+}
+
+.new-deals-cards_btn {
+    width: 85%;
+    padding: 0.75rem 1rem;
+    background: #E9EBFA;
+    border-radius: 50px;
+    text-align: center;
+    color: #4F4F4F;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+/* End: new-deals-cards */
+/* Begin: loan-calculator */
+.loan-calculator {
+    margin-top: 2.2rem;
+}
+
+.loan {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    padding-right: 4.5rem;
+    padding-bottom: 2.25rem;
+    background: #C8E6FF;
+    position: relative;
+    width: fit-content;
+    border-radius: 1.75rem;
+}
+
+.loan:before {
+    border-radius: 1.75rem;
+    position: absolute;
+    content: " ";
+    height: 100%;
+    width: 100%;
+    transform: translateX(22.5%);
+    background: #DFEFFE;
+    z-index: -1;
+    top: 0;
+    opacity: 0.5;
+}
+
+.loan h3 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.loan p {
+    color: #4f4f4f;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+/* End: loan-calculator */
+/* Begin: more-people */
+.more-people {
+    margin-top: 0.85rem;
+    height: 3.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.more-people_list {
+    height: 3.25rem;
+    position: relative;
+}
+
+.more-people_item {
+    position: absolute;
+    left: 0;
+    border-radius: 50%;
+}
+
+.more-people_item:nth-child(2) {
+    left: calc(1 * 2.3rem);
+    z-index: 1;
+}
+
+.more-people_item:nth-child(3) {
+    left: calc(2 * 2.3rem);
+    z-index: 2;
+}
+
+.more-people_item:nth-child(4) {
+    left: calc(3 * 2.3rem);
+    z-index: 3;
+}
+.more-people_item:nth-child(5) {
+    left: calc(4 * 2.23rem);
+    z-index: 4;
+}
+
+.more-people_end-list {
+    width: 3.25rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: #352B71;
+    font-size: 0.75rem;
+    border: 2px solid #F6F6F6;
+}
+
+.more-people_view-more {
+    font-size: 0.75rem;
+    color: #828282;
+    white-space: nowrap;
+    margin-left: 0.5rem;
+}
+/* End: more-people */
+/* End: Total Amount */
+
+
+
+/* End: Main Content */
+.content-left_main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -2.15rem;
+}
+
+.content-left_main-item {
+    width: 50%;
+    padding: 0 2.15rem;
+    margin-bottom: 2.2rem;
+}
+
+
+/* Begin: Profile Card */
+.card {
+    width: 100%;
+    padding: 3rem 2.25rem 1.5rem;
+    background-color: #CCE8FE;
+    border-radius: 1.6875rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-card_img {
+    position: relative;
+    width: 77%;
+    height: 77%;
+    object-fit: cover;
+}
+
+.profile-card_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.profile-card_img-star {
+    position: absolute;
+    background: #FFFFFF;
+    padding: 0.5rem;
+    border-radius: 50%;
+    top: 20%;
+    left: -0.5rem;
+}
+
+.profile-card_img-menu {
+    position: absolute;
+    background: #FFFFFF;
+    padding: 0.5rem 0.75rem;
+    display: flex;
+    border-radius: 1rem;
+    top: 0.5rem;
+    right: -0.5rem;
+}
+
+.profile-card_img-menu-true {
+    margin-right: 1rem;
+}
+
+.profile-card_btn {
+    width: 100%;
+    text-align: center;
+    padding: 0.85rem 0;
+    margin-top: 4.8rem;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 21px rgba(0, 0, 0, 0.1);
+    border-radius: 23px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+/* End: Profile Card */
+/* Begin: Dispute progress details */
+.dispute-progress-details {
+    width: 100%;
+}
+
+.card_heading {
+
+}
+
+.card_heading-line1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_heading-line1 h4 {
+    color: #333333;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.card_heading-line1 span:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.card_heading-line2 {
+    font-size: 0.75rem;
+    width: 60%;
+    margin-top: 4px;
+}
+
+.card_heading-line2 span {
+    color: #4F4282;
+    font-weight: 700;
+}
+
+.dispute-progress-details_main {
+}
+
+.dispute-progress-details_main-chart {
+    height: 230px;
+}
+
+.dispute-progress-details_main-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dispute-progress-details_main-btn_item {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.btn.btn-danger {
+    background: #F3E1D5;
+}
+
+.btn.btn-info {
+    background: #DBDBFD;
+}
+
+.dispute-progress-details_main-btn_item h4 {
+    font-size: 1.5635rem;
+    font-weight: bold;
+    margin-top: 0.8rem;
+}
+
+.dispute-progress-details_main-btn_item p {
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+/* End: Dispute progress details */
+/* Begin: Credit Details */
+.credit-details_list {
+    margin-top: 1.5rem;
+}
+
+.credit-details_item {
+    cursor: pointer;
+    padding: 1.75rem 1.35rem;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 1.74rem;
+    margin-bottom: 1.5rem;
+}
+
+.credit-details_item-left {
+    width: 25%;
+    display: flex;
+    position: relative;
+}
+
+.credit-details_item-icon {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 41.5%;
+    transform: translateX(-50%);
+    padding: 0.075rem 0.5rem;
+    background: #3B3968;
+    border-radius: 26px;
+}
+
+.credit-details_item-icon path {
+    stroke: white;
+}
+
+.credit-details_item-left img {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background: #DEDDFA;
+    object-fit: cover;
+}
+
+.credit-details_item-right {
+    flex: 1;
+}
+
+.credit-details_item-work {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+    white-space: nowrap;
+}
+
+.credit-details_item-work h4 {
+    margin-right: 2px;
+}
+
+.credit-details_item-owner {
+    font-size: 0.75rem;
+    margin-top: 4px;
+}
+
+.credit-details_item.done {
+    background-color: #DCDBFA;
+    cursor: default;
+}
+
+
+.credit-details_item.done .credit-details_item-left img{
+    background: #C4C2FC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.credit-details_item.done .credit-details_item-icon {
+    display: block;
+}
+/* End: Credit Details */
+/* Begin: credit-report-cart */
+.credit-report-cart {
+    width: 100%;
+    height: 100%;
+    background: white;
+    min-height: 22.635rem;
+    max-height: 25rem;
+    justify-content: space-between;
+}
+
+.credit-report-cart_header {
+    color: #333333;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.credit-report-cart_main {
+    position: relative;
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.credit-report-cart_main img {
+    width: 55%;
+    height: auto;
+}
+
+.credit-report-cart_main-icon {
+    position: absolute; 
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    padding: 0.5rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    border: 1px solid #DADADA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.credit-report-cart_main-icon.left {
+    left: 0;
+    padding-right: 10px;
+}
+
+.credit-report-cart_main-icon.right {
+    right: 0;
+    padding-left: 10px;
+}
+
+.credit-report-cart_bottom {
+    color: #444;
+    font-style: italic;
+    padding-bottom: 3rem;
+}
+/* End: credit-report-cart */
+/* Begin:  */
+/* End: Main */
