@@ -2,6 +2,8 @@
 # Digital Wallet DashBoard
 ## `HTML` `CSS` `JAVASCRIPT` `CHART.JS`
 ### snapshots
+![image](snapshot/full-page.png)
+![image](snapshot/full-page1.png)
 
 ### link here: [https://nmcprojects.github.io/static-web/digital-wallet-dashboard](https://nmcprojects.github.io/static-web/digital-wallet-dashboard)
 ### Discription:
