@@ -608,7 +608,9 @@ body {
 }
 
 .dispute-progress-details_main-chart {
-    height: 230px;
+    flex: 1;
+    padding-top: 3rem;
+    padding-bottom: 1.75rem;
 }
 
 .dispute-progress-details_main-btn {
